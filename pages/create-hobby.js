@@ -1,13 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-// export default function hobby() {
-//   return (
-//   	<h1>Hobby Page</h1>
-
-
-//   )
-// }
 
 export default function HobbyForm() {
 	const [formData, setFormData] = useState({

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 //CREATE Route
 export default function BudgetForm() {
