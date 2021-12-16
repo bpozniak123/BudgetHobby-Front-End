@@ -60,7 +60,7 @@ export default function BudgetForm() {
     </p>
      <p>
       <label htmlFor="hobby_tools_cost">Cost of Hobby Tools: </label>
-      <input id="hobby_name" name="hobby_name" type="text" autoComplete="name"/>
+      <input id="hobby_tools_cost" name="hobby_tools_cost" type="text" autoComplete="name"/>
     </p>
      <p>
       <label htmlFor="hobby_gear_cost">Cost of Hobby Gear: </label>
@@ -77,6 +77,9 @@ export default function BudgetForm() {
       <button type="submit">Complete Budget</button>
       <Link href="/">
             <button type="button">Back to Home</button>
+      </Link>
+      <Link href="/read-budget">
+            <button type="button">Update Budget</button>
       </Link>
     </form>
   )

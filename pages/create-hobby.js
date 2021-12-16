@@ -31,7 +31,6 @@ export default function HobbyForm() {
     })
     console.log(res)
     const result = await res.json()
-    // result.user => 'Ada Lovelace'
   }
 
   return (
@@ -71,6 +70,9 @@ export default function HobbyForm() {
       <button type="submit">Add Hobby</button>
       <Link href="/">
             <button type="button">Back to Home</button>
+      </Link>
+      <Link href="/read-hobby">
+            <button type="button">Update Hobby</button>
       </Link>
     </form>
   )
