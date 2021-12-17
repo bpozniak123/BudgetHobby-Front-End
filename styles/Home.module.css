@@ -18,8 +18,15 @@
 
 .titleHome {
   font-family: 'Bungee', cursive;
-  font-size: 50px;
+  font-size: 60px;
   color: #16a085; /*Mountain Meadow */
+}
+
+.subtitleHome {
+  font-family: 'Bungee', cursive;
+  font-size: 30px;
+  font-style: italic;
+  color: #fe7968;
 }
 
 .footer {
@@ -88,6 +95,7 @@
   padding: 1.5rem;
   text-align: left;
   color: inherit;
+  /*color: #16a085;*/
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
@@ -98,8 +106,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #16a085;
-  border-color: #16a085;
+  color: #fe7968;
+  border-color: #fe7968;
 }
 
 .card h2 {

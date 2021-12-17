@@ -1,4 +1,4 @@
-// import Navbar from '../navbar'
+import Navbar from './navbar'
 // import Footer from './footer'
 
 // import Navbar from './navbar/navbar'
@@ -12,6 +12,7 @@ export default function SimpleLayout(props) {
         {props.preContainer && props.preContainer}
         <div className="album py-5 bg-light">
           <div className="container">
+            <Navbar />
             {props.children}
           </div>
         </div>

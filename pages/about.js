@@ -9,7 +9,11 @@ export default function AboutPage() {
 
 			<h1> Who We Are </h1>
 
-			<p>Are you a dreamer? Do you live a life of adventure but would like a place to store your ideas and new areas of interest? Do you wish to live a life of adventure and explore new things?</p>
+			<p>
+				<ul>Are you a dreamer?</ul>
+				<ul>Do you live a life of adventure but would like a place to store your ideas and new areas of interest?</ul>
+				<ul>Do you wish to live a life of adventure and explore new things?</ul>
+			</p>
 
 			<p>Hobby Helper was created to allow people to log and keep track of new hobbies. We even have a built in personal finance feature which also allows you to budget for a hobby!</p>
 
@@ -34,12 +38,15 @@ export default function AboutPage() {
 				p {
 					font-family: 'Gruppo', cursive;
 					color: blue;
-					font-size: 30px;
+					font-size: 25px;
 					padding: 20px;
 					margin-top: 40px;
 					margin-left: 300px;
 					max-width: 60%;
 					border-style: groove;
+				}
+				ul {
+					font-style: italic;
 				}
 			`}</style>
 		</div>

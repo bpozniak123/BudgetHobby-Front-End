@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
+// import Footer from '../components/Footer'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
@@ -31,6 +33,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        {/*<Navbar />*/}
         <link
           href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" 
           rel="stylesheet"
@@ -42,7 +45,8 @@ export default function Home() {
           </span>
         </h1>
 
-      <h3>Track what excites you!</h3>
+        <h3 className={styles.subtitleHome}>
+        Track what excites you!</h3>
 
       <Link href="/about">
       <button type="button" class="btn btn-link">About Us</button>
