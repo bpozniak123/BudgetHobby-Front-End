@@ -6,14 +6,6 @@
   background-attachment: fixed;
 }
 
-.container2 {
-  padding: 0 2rem;
-  background-image: url(../public/aboutusbg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -100,7 +92,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   max-width: 800px;
 }
 

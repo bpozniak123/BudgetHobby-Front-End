@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import styles from '../styles/Hobby.module.css'
 
 export default function GetHobby() {
   const [hobbies, setHobbies] = useState([])
@@ -71,24 +72,27 @@ export default function GetHobby() {
   }
   
   return (
-    <>
-    <h2>Get Hobby </h2>
+
+    <div className={styles.container}>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee&family=Gruppo&display=swap" rel="stylesheet"/>
+
+    <h2 className={styles.titleHome}>Hobbies Homepage </h2>
 
       <Link href="/">
-            <button type="button">Back to Home</button>
+        <button type="button" class="btn btn-info">Back to Home</button>
       </Link>
-      <button onClick={resHobby}>View Hobbies</button>
+      <button onClick={resHobby} class="btn btn-warning">View Hobbies</button>
       {hobbies.map((hobby) => {
         return (
           <div key={hobby.id}>
           {hobby.hobby}
-            <button onClick={() => deleteHobby(hobby.id)}>Delete</button>
-            <button onClick={() => showEdit(hobby)}>Update</button>
+            <button onClick={() => deleteHobby(hobby.id)} class="btn btn-danger">Delete</button>
+            <button onClick={() => showEdit(hobby)} class="btn btn-warning">Update</button>
           </div>
         )
       })}
     {showEditForm ? 
-  <div className="hobbyForm">
+  <div className={styles.form}>
   <form onSubmit={updateHobby}>
    <p>
       <label htmlFor="hobby">Hobby: </label>
@@ -122,11 +126,11 @@ export default function GetHobby() {
       <label htmlFor="cost_of_accessories">Cost of Accessories: </label>
       <input id="cost_of_accessories" name="cost_of_accessories" onChange={handleChange} value={formData?.cost_of_accessories} type="text" autoComplete="name" required />
     </p>
-      <button type="submit">Update</button>
+      <button type="submit" class="btn btn-warning">Update</button>
   </form>
   </div>
   : ''
 }
-  </>
+  </div>
   )
 }

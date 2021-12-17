@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import styles from '../styles/Budget.module.css'
+import logo from '../public/HELPlogo.png'
 
 //CREATE Route
 export default function BudgetForm() {
@@ -26,6 +28,9 @@ export default function BudgetForm() {
   }
 
   return (
+    <div className={styles.container}>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee&family=Gruppo&display=swap" rel="stylesheet"/>
+    <div className={styles.form}>
     <form onSubmit={addBudget}>
     <p>
       <label htmlFor="name">Name: </label>
@@ -75,13 +80,18 @@ export default function BudgetForm() {
       <label htmlFor="maintenance_cost">Maintenance Cost: </label>
       <input id="maintenance_cost" name="maintenance_cost" type="text" autoComplete="name"/>
     </p>
-      <button type="submit">Complete Budget</button>
+
+    <div class="btn-group" role="group" aria-label="Budget buttons">
+      <button type="submit" class="btn btn-success">Complete Budget</button>
       <Link href="/">
-            <button type="button">Back to Home</button>
+            <button type="button" class="btn btn-info">Back to Home</button>
       </Link>
       <Link href="/read-budget">
-            <button type="button">Update Budget</button>
+            <button type="button" class="btn btn-warning">Update Budget</button>
       </Link>
+      </div>
     </form>
+    </div>
+    </div>
   )
 }

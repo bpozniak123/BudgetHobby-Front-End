@@ -1,5 +1,8 @@
 module.exports = {
   reactStrictMode: true,
+  env: {
+    customKey: 'my-value',
+  
 
     async headers() {
     return [
@@ -18,4 +21,5 @@ module.exports = {
       },
     ]
   },
+  }
 }

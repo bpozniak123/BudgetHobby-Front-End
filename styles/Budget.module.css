@@ -1,0 +1,25 @@
+.container {
+  padding: 0 2rem;
+  background-image: url(../public/money2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.titleHome h2{
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-style: bold;
+}
+
+.form {
+  margin: auto;
+  max-width: 450px;
+  padding: 10px;
+  background: #ff4c30;
+  opacity:  0.9;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  font-style: bold;
+}
+

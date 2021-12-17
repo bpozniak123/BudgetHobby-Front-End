@@ -7,15 +7,15 @@ import Link from 'next/link'
 import NextCors from 'nextjs-cors'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-let baseURL;
+// let baseURL;
 
-if (process.env.NODE_ENV === 'development') {
-  baseURL = 'http://localhost:3000';
-} else {
-  baseURL = 'https://hobbyhelper-app.herokuapp.com/';
-}
+// if (process.env.NODE_ENV === 'development') {
+//   baseURL = 'http://localhost:3000';
+// } else {
+//   baseURL = 'https://hobbyhelper-app.herokuapp.com/';
+// }
 
-console.log('current base URL:', baseURL)
+// console.log('current base URL:', baseURL)
 
 async function handler(req, res) {
    // Run the cors middleware
@@ -56,23 +56,21 @@ export default function Home() {
         </h1>
 
         <h3 className={styles.subtitleHome}>
-        Track what excites you!</h3>
+        Track what excites you!
+        </h3>
 
-      <Link href="/about">
-      <button type="button" class="btn btn-link">About Us</button>
-      </Link>
-
-        <div>
-        <Link href="/create-hobby">
-        <button type="submit" class="btn btn-primary">Click to Add New Hobby</button>
+        <Link href="/about">
+        <button type="button" class="btn btn-link">About Us</button>
         </Link>
-        </div>
 
-        <div>
+        <Link href="/create-hobby">
+        <button type="submit" class="btn btn-primary" id="hobbyButton">Click to Add New Hobby</button>
+        </Link>
+        
         <Link href="/create-budget">
         <button type="submit" class="btn btn-success">Create a Budget!</button>
         </Link>
-        </div>
+        
 
         <div className={styles.grid}>
           <a href="http://localhost:3000/read-hobby" className={styles.card}>
@@ -85,23 +83,11 @@ export default function Home() {
             <p>You can also update or delete budgets too.</p>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
+          <a href="http://localhost:3000/hobby-ideas" className={styles.card}>
             <h2>Hobby Ideas &rarr;</h2>
             <p>Here are a few pictures to spark your interests.</p>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
       </main>
       <footer className={styles.footer}>

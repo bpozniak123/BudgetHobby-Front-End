@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import styles from '../styles/Budget.module.css'
 
 export default function GetBudget() {
   const [budgets, setBudgets] = useState([])
@@ -67,24 +68,26 @@ export default function GetBudget() {
   }
   
   return (
-    <>
+ 
+    <div className={styles.container}>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee&family=Gruppo&display=swap" rel="stylesheet"/>
     <h2>Get Budgets </h2>
 
       <Link href="/">
-            <button type="button">Back to Home</button>
+            <button type="button" class="btn btn-info">Back to Home</button>
       </Link>
-      <button onClick={resBudget}>View Budgets</button>
+      <button onClick={resBudget} class="btn btn-warning">View Budgets</button>
       {budgets.map((budget) => {
         return (
           <div key={budget.id}>
           {budget.name}
-            <button onClick={() => deleteBudget(budget.id)}>Delete</button>
-            <button onClick={() => showEdit(budget)}>Update</button>
+            <button onClick={() => deleteBudget(budget.id)} class="btn btn-danger">Delete</button>
+            <button onClick={() => showEdit(budget)} class="btn btn-warning">Update</button>
           </div>
         )
       })}
       {showEditForm ? 
-    <div className="budgetForm">
+    <div className={styles.form}>
     <form onSubmit={updateBudget}>
     <p>
       <label htmlFor="name">Name: </label>
@@ -134,11 +137,11 @@ export default function GetBudget() {
       <label htmlFor="maintenance_cost">Maintenance Cost: </label>
       <input id="maintenance_cost" name="maintenance_cost" value={formData?.maintenance_cost} type="text" autoComplete="name"/>
     </p>
-      <button type="submit">Update</button>
+      <button type="submit" class="btn btn-warning">Update</button>
     </form>
     </div>
     : ''
   }
-    </>
+  </div>
   )
 }

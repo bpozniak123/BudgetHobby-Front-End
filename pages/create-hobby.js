@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import styles from '../styles/Hobby.module.css'
+import logo from '../public/HELPlogo.png'
 
 
 export default function HobbyForm() {
@@ -14,7 +16,7 @@ export default function HobbyForm() {
   const addHobby = async event => {
     event.preventDefault()
     console.log(formData)
-    const res = await fetch('http://localhost:8000/api/v1/hobby/', {
+    const res = await fetch(baseURL + '/hobby', {
       body: JSON.stringify(
         // hobby: event.target.hobby
       	// hobby: ''
@@ -28,6 +30,9 @@ export default function HobbyForm() {
   }
 
   return (
+    <div className={styles.container}>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee&family=Gruppo&display=swap" rel="stylesheet"/>
+    <div className={styles.form}>
     <form onSubmit={addHobby}>
     <p>
       <label htmlFor="hobby">Hobby: </label>
@@ -61,14 +66,21 @@ export default function HobbyForm() {
       <label htmlFor="cost_of_accessories">Cost of Accessories: </label>
       <input id="cost_of_accessories" name="cost_of_accessories" onChange={handleChange} type="text" autoComplete="name" required />
     </p>
-      <button type="submit">Add Hobby</button>
-      <Link href="/">
-            <button type="button">Back to Home</button>
-      </Link>
-      <Link href="/read-hobby">
-            <button type="button">Update Hobby</button>
-      </Link>
+      
+      <div class="btn-group" role="group" aria-label="Hobby buttons">
+        <button type="submit" class="btn btn-success">Add Hobby</button>
+      
+        <Link href="/">
+          <button type="button" class="btn btn-info">Back to Home</button>
+        </Link>
+      
+        <Link href="/read-hobby">
+          <button type="button" class="btn btn-warning">Update Hobby</button>
+        </Link>
+      </div>
     </form>
+     </div>
+    </div>
   )
 }
 
