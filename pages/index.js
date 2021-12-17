@@ -7,6 +7,16 @@ import Link from 'next/link'
 import NextCors from 'nextjs-cors'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+let baseURL;
+
+if (process.env.NODE_ENV === 'development') {
+  baseURL = 'http://localhost:3000';
+} else {
+  baseURL = 'https://hobbyhelper-app.herokuapp.com/';
+}
+
+console.log('current base URL:', baseURL)
+
 async function handler(req, res) {
    // Run the cors middleware
    // nextjs-cors uses the cors package, so we invite you to check the documentation https://github.com/expressjs/cors
