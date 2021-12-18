@@ -27,6 +27,7 @@ export default function GetHobby() {
 
   const resHobby = async event => {
     event.preventDefault()
+    console.log("Before fetch!")
     const readHobby = await fetch(baseURL + '/hobby')
     const result = await readHobby.json()
     console.log("Here is what is returning from hobby route")
