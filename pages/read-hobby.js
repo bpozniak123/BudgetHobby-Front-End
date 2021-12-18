@@ -38,7 +38,7 @@ export default function GetHobby() {
     })
     const get_data = await del_hobby.json()
     console.log(get_data)
-    const readHobby = await fetch(baseURL + '/hobby/')
+    const readHobby = await fetch(baseURL + '/read-hobby/')
     const result = await readHobby.json()
     setHobbies(result)
   }

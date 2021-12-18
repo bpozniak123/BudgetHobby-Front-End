@@ -23,7 +23,7 @@ export default function GetBudget() {
 
   const resBudget = async event => {
     event.preventDefault()
-    const readBudget = await fetch(baseURL + '/budget/')
+    const readBudget = await fetch(baseURL + '/read-budget/')
     const result = await readBudget.json()
     setBudgets(result)
   }
@@ -34,7 +34,7 @@ export default function GetBudget() {
     })
     const get_data = await del_budget.json()
     console.log(get_data)
-    const readBudget = await fetch(baseURL + '/budget/')
+    const readBudget = await fetch(baseURL + '/read-budget/')
     const result = await readBudget.json()
     setBudgets(result)
   }
