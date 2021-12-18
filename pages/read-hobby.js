@@ -26,6 +26,7 @@ export default function GetHobby() {
   useEffect(() => console.log(formData), [formData]);
 
   const resHobby = async event => {
+    console.log("SHOW RES HOBBY!")
     event.preventDefault()
     console.log("Before fetch!")
     const readHobby = await fetch('https://hobbyhelper-app.herokuapp.com/api/v1/hobby')
