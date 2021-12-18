@@ -2,8 +2,8 @@
   "name": "nextjs-budgethobby-frontend",
   "private": true,
   "engines": {
-    "node": "14.18.0", 
-    "npm": "8.1.0"   
+    "node": "v14.18.1", 
+    "npm": "8.0.0"   
   },
   "scripts": {
     "dev": "next dev",
