@@ -2,7 +2,8 @@ Project Title: Hobby Helper
 	
 Overview: App that allows you to enter and track hobbies/interests and view other user's hobbies for inspiration or to peak interest. Also, there is a personal budgeting component to 1. keep track of your personal finances and 2. to plan or budget around a hobby or multiple hobbies. 
 
-Description/User Story: Upon opening the website, a user has the ability to click "About" in the navigation bar to read and gain an understanding of the website's purpose. Within the homepage, a user may click a button to create and add a hobby of interest. Either before or after entering a hobby (preferrably after entering a hobby), the user may complete a personal budgetting form which includes hobby costs. This allows a user to not only log and keep track of interests or hobbies, but also provides the user an opportunity to keep track of their personal finances and budget for a hobby (hobbies). 
+Description/User Story: Upon opening the website, a user has the ability to click "About" in the navigation bar to read and gain an understanding of the website's purpose. Within the homepage, a user may click a button to create and add a hobby of interest. Either before or after entering a hobby (preferrably after entering a hobby), the user may complete a personal budgetting form which includes hobby costs. This allows a user to not only log and keep track of interests or hobbies, but also provides the user an opportunity to keep track of their personal finances and budget for a hobby (hobbies).
+
 
 Technologies Used:
 	Planning: Excalidraw, Whimsical

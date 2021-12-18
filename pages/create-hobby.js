@@ -16,7 +16,7 @@ export default function HobbyForm() {
   const addHobby = async event => {
     event.preventDefault()
     console.log(formData)
-    const res = await fetch(baseURL + '/create-hobby', {
+    const res = await fetch('http://localhost:8000/api/v1/hobby/', {
       body: JSON.stringify(
         // hobby: event.target.hobby
       	// hobby: ''
