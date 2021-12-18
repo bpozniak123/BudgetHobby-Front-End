@@ -27,7 +27,7 @@ export default function GetHobby() {
 
   const resHobby = async event => {
     event.preventDefault()
-    const readHobby = await fetch('baseURL' + '/hobby')
+    const readHobby = await fetch('baseURL' + '/read-hobby')
     const result = await readHobby.json()
     setHobbies(result)
   }
