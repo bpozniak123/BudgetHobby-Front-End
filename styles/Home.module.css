@@ -8,7 +8,8 @@
 
 .container2 {
   padding: 0 2rem;
-  background-image: url(../public/aboutusbg.jpg);
+  /*background-image: url(../public/aboutusbg.jpg);*/
+  background-image: url(../public/home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -16,7 +16,7 @@ export default function BudgetForm() {
   const addBudget = async event => {
     event.preventDefault()
     console.log(formData)
-    const res = await fetch('http://localhost:8000/api/v1/budget/', {
+    const res = await fetch(baseURL + '/budget/', {
       body: JSON.stringify(
       	formData
       ),

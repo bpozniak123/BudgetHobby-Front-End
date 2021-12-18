@@ -23,18 +23,18 @@ export default function GetBudget() {
 
   const resBudget = async event => {
     event.preventDefault()
-    const readBudget = await fetch('http://localhost:8000/api/v1/budget/')
+    const readBudget = await fetch(baseURL + '/budget/')
     const result = await readBudget.json()
     setBudgets(result)
   }
 
   const deleteBudget = async budgetId => {
-    const del_budget = await fetch(`http://localhost:8000/api/v1/budget/${budgetId}`, {
+    const del_budget = await fetch(baseURL + `/budget/${budgetId}`, {
       method: 'DELETE'
     })
     const get_data = await del_budget.json()
     console.log(get_data)
-    const readBudget = await fetch('http://localhost:8000/api/v1/budget/')
+    const readBudget = await fetch(baseURL + '/budget/')
     const result = await readBudget.json()
     setBudgets(result)
   }
@@ -43,7 +43,7 @@ export default function GetBudget() {
     event.preventDefault()
     console.log(budgets)
     console.log(" ON UPDATE BUDGET")
-    const update_budget = await fetch(`http://localhost:8000/api/v1/budget/${budget.id}`, {
+    const update_budget = await fetch(baseURL + `/budget/${budget.id}`, {
       method: 'PUT',
       body: JSON.stringify(formData),
       headers: { 'Content-Type': 'application/json' }
@@ -71,7 +71,7 @@ export default function GetBudget() {
  
     <div className={styles.container}>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee&family=Gruppo&display=swap" rel="stylesheet"/>
-    <h2>Get Budgets </h2>
+    <h2>Budgets Homepage</h2>
 
       <Link href="/">
             <button type="button" className="btn btn-info">Back to Home</button>

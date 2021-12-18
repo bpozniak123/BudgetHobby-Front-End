@@ -27,18 +27,18 @@ export default function GetHobby() {
 
   const resHobby = async event => {
     event.preventDefault()
-    const readHobby = await fetch('http://localhost:8000/api/v1/hobby/')
+    const readHobby = await fetch(baseURL + '/hobby')
     const result = await readHobby.json()
     setHobbies(result)
   }
 
   const deleteHobby = async hobbyId => {
-    const del_hobby = await fetch(`http://localhost:8000/api/v1/hobby/${hobbyId}`, {
+    const del_hobby = await fetch(baseURL + ` /hobby/${hobbyId}`, {
       method: 'DELETE'
     })
     const get_data = await del_hobby.json()
     console.log(get_data)
-    const readHobby = await fetch('http://localhost:8000/api/v1/hobby/')
+    const readHobby = await fetch(baseURL + '/hobby')
     const result = await readHobby.json()
     setHobbies(result)
   }
@@ -47,7 +47,7 @@ export default function GetHobby() {
     event.preventDefault()
     console.log(hobbies)
     console.log(" ON UPDATE HOBBIES")
-    const update_hobby = await fetch(`http://localhost:8000/api/v1/hobby/${hobby.id}`, {
+    const update_hobby = await fetch(baseURL + `/hobby/${hobby.id}`, {
       method: 'PUT',
       body: JSON.stringify(formData),
       headers: { 'Content-Type': 'application/json' }
