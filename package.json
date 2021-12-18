@@ -1,14 +1,14 @@
 {
   "name": "nextjs-budgethobby-frontend",
   "private": true,
+  "engines": {
+    "node": "17.2.0", 
+    "npm": "8.1.4"   
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
-  },
-  "engines": {
-    "node": "17.2.0", // your version here
-    "npm": "8.1.4"   // your version here
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
