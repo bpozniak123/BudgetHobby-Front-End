@@ -7,7 +7,7 @@ Description/User Story: Upon opening the website, a user has the ability to clic
 Technologies Used:
 	Planning: Excalidraw, Whimsical
 
-	Front-End: Next.js, CSS
+	Front-End: Next.js, Bootstrap
 
 	Back-End: Python, Flask, SQLite/Postgres, CORS 
 
@@ -22,4 +22,6 @@ Modifications/Updates:
 		5.a.- Add in a category function on front end and back end. 
 		5.b.- Include the ability for a user to upload pics of their trip or to attach to their hobby when creating a new entry
 
-Deployed Link:
+Deployed Link: http://budget-hobby-front-end.vercel.app/
+Git Hub Front End: https://github.com/bpozniak123/BudgetHobby-Front-End
+Git Hub Back End: https://github.com/bpozniak123/BudgetHobby-Back-End/tree/main
