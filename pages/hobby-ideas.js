@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Ideas.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Image from 'next/image'
 import audi from '../public/rs3.jpg'

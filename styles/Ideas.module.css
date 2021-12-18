@@ -98,6 +98,7 @@
 
 .card {
   margin: 1rem;
+  display: inline-block;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
