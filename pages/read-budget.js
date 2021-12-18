@@ -23,18 +23,18 @@ export default function GetBudget() {
 
   const resBudget = async event => {
     event.preventDefault()
-    const readBudget = await fetch('baseURL' + '/budget/')
+    const readBudget = await fetch(baseURL + '/budget/')
     const result = await readBudget.json()
     setBudgets(result)
   }
 
   const deleteBudget = async budgetId => {
-    const del_budget = await fetch('baseURL' + `/hobby/${budgetId}`, {
+    const del_budget = await fetch(baseURL + `/hobby/${budgetId}`, {
       method: 'DELETE'
     })
     const get_data = await del_budget.json()
     console.log(get_data)
-    const readBudget = await fetch('baseURL' + '/budget/')
+    const readBudget = await fetch(baseURL + '/budget/')
     const result = await readBudget.json()
     setBudgets(result)
   }
@@ -43,7 +43,7 @@ export default function GetBudget() {
     event.preventDefault()
     console.log(budgets)
     console.log(" ON UPDATE BUDGET")
-    const update_budget = await fetch('baseURL' + `/budget/${budget.Id}`, {
+    const update_budget = await fetch(baseURL + `/budget/${budget.Id}`, {
       method: 'PUT',
       body: JSON.stringify(formData),
       headers: { 'Content-Type': 'application/json' }
