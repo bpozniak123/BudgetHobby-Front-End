@@ -6,7 +6,7 @@ let baseURL;
 if (process.env.NODE_ENV === 'development') {
   baseURL = 'http://localhost:8000/api/v1/';
 } else {
-  baseURL = 'https://hobbyhelper-app.herokuapp.com/';
+  baseURL = 'https://hobbyhelper-app.herokuapp.com/api/v1';
 }
 
 console.log('current base URL:', baseURL)
