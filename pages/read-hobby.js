@@ -47,7 +47,7 @@ export default function GetHobby() {
     event.preventDefault()
     console.log(hobbies)
     console.log(" ON UPDATE HOBBIES")
-    const update_hobby = await fetch(`http://localhost:8000/api/v1/hobby/${hobbyId}`, {
+    const update_hobby = await fetch(`http://localhost:8000/api/v1/hobby/${hobby.id}`, {
       method: 'PUT',
       body: JSON.stringify(formData),
       headers: { 'Content-Type': 'application/json' }
