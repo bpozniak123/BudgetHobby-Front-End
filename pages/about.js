@@ -60,17 +60,4 @@ export default function AboutPage() {
 	)
 }
 
-{/*	//<div className="aboutuspage">
-
-	//<body>
-				//<Image src={aboutusback} alt="aboutbackground"/>
-	//</body>*/}
-
-	
-//.aboutuspage {
-				//   background-image: url(../img/aboutusback.jpg);
-				//   background-size: cover;
-				//   background-repeat: no-repeat;
-				//   background-attachment: fixed;
-				// }
 

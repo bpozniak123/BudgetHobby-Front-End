@@ -41,7 +41,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/*<Navbar />*/}
         <link
           href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" 
           rel="stylesheet"

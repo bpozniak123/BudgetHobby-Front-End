@@ -1,7 +1,3 @@
-import Navbar from './navbar'
-// import Footer from './footer'
-
-// import Navbar from './navbar/navbar'
 import React from 'react'
 
 export default function SimpleLayout(props) {
