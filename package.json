@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start"
   },
-    "engines": {
+  "engines": {
     "node": "17.2.0", // your version here
     "npm": "8.1.4"   // your version here
   },
