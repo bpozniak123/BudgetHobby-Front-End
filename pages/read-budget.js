@@ -74,15 +74,15 @@ export default function GetBudget() {
     <h2>Get Budgets </h2>
 
       <Link href="/">
-            <button type="button" class="btn btn-info">Back to Home</button>
+            <button type="button" className="btn btn-info">Back to Home</button>
       </Link>
-      <button onClick={resBudget} class="btn btn-warning">View Budgets</button>
+      <button onClick={resBudget} className="btn btn-warning">View Budgets</button>
       {budgets.map((budget) => {
         return (
           <div key={budget.id}>
           {budget.name}
-            <button onClick={() => deleteBudget(budget.id)} class="btn btn-danger">Delete</button>
-            <button onClick={() => showEdit(budget)} class="btn btn-warning">Update</button>
+            <button onClick={() => deleteBudget(budget.id)} className="btn btn-danger">Delete</button>
+            <button onClick={() => showEdit(budget)} className="btn btn-warning">Update</button>
           </div>
         )
       })}
@@ -137,7 +137,7 @@ export default function GetBudget() {
       <label htmlFor="maintenance_cost">Maintenance Cost: </label>
       <input id="maintenance_cost" name="maintenance_cost" value={formData?.maintenance_cost} type="text" autoComplete="name"/>
     </p>
-      <button type="submit" class="btn btn-warning">Update</button>
+      <button type="submit" className="btn btn-warning">Update</button>
     </form>
     </div>
     : ''

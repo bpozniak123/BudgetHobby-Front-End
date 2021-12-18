@@ -67,15 +67,15 @@ export default function HobbyForm() {
       <input id="cost_of_accessories" name="cost_of_accessories" onChange={handleChange} type="text" autoComplete="name" required />
     </p>
       
-      <div class="btn-group" role="group" aria-label="Hobby buttons">
-        <button type="submit" class="btn btn-success">Add Hobby</button>
+      <div className="btn-group" role="group" aria-label="Hobby buttons">
+        <button type="submit" className="btn btn-success">Add Hobby</button>
       
         <Link href="/">
-          <button type="button" class="btn btn-info">Back to Home</button>
+          <button type="button" className="btn btn-info">Back to Home</button>
         </Link>
       
         <Link href="/read-hobby">
-          <button type="button" class="btn btn-warning">Update Hobby</button>
+          <button type="button" className="btn btn-warning">Update Hobby</button>
         </Link>
       </div>
     </form>

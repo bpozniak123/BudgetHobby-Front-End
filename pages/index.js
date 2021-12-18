@@ -60,15 +60,15 @@ export default function Home() {
         </h3>
 
         <Link href="/about">
-        <button type="button" class="btn btn-link">About Us</button>
+        <button type="button" className="btn btn-link">About Us</button>
         </Link>
 
         <Link href="/create-hobby">
-        <button type="submit" class="btn btn-primary" id="hobbyButton">Click to Add New Hobby</button>
+        <button type="submit" className="btn btn-primary" id="hobbyButton">Click to Add New Hobby</button>
         </Link>
         
         <Link href="/create-budget">
-        <button type="submit" class="btn btn-success">Create a Budget!</button>
+        <button type="submit" className="btn btn-success">Create a Budget!</button>
         </Link>
         
 

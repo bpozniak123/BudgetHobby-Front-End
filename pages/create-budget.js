@@ -81,13 +81,13 @@ export default function BudgetForm() {
       <input id="maintenance_cost" name="maintenance_cost" type="text" autoComplete="name"/>
     </p>
 
-    <div class="btn-group" role="group" aria-label="Budget buttons">
-      <button type="submit" class="btn btn-success">Complete Budget</button>
+    <div className="btn-group" role="group" aria-label="Budget buttons">
+      <button type="submit" className="btn btn-success">Complete Budget</button>
       <Link href="/">
-            <button type="button" class="btn btn-info">Back to Home</button>
+            <button type="button" className="btn btn-info">Back to Home</button>
       </Link>
       <Link href="/read-budget">
-            <button type="button" class="btn btn-warning">Update Budget</button>
+            <button type="button" className="btn btn-warning">Update Budget</button>
       </Link>
       </div>
     </form>

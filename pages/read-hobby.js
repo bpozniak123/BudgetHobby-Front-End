@@ -79,15 +79,15 @@ export default function GetHobby() {
     <h2 className={styles.titleHome}>Hobbies Homepage </h2>
 
       <Link href="/">
-        <button type="button" class="btn btn-info">Back to Home</button>
+        <button type="button" className="btn btn-info">Back to Home</button>
       </Link>
-      <button onClick={resHobby} class="btn btn-warning">View Hobbies</button>
+      <button onClick={resHobby} className="btn btn-warning">View Hobbies</button>
       {hobbies.map((hobby) => {
         return (
           <div key={hobby.id}>
           {hobby.hobby}
-            <button onClick={() => deleteHobby(hobby.id)} class="btn btn-danger">Delete</button>
-            <button onClick={() => showEdit(hobby)} class="btn btn-warning">Update</button>
+            <button onClick={() => deleteHobby(hobby.id)} className="btn btn-danger">Delete</button>
+            <button onClick={() => showEdit(hobby)} className="btn btn-warning">Update</button>
           </div>
         )
       })}
@@ -126,7 +126,7 @@ export default function GetHobby() {
       <label htmlFor="cost_of_accessories">Cost of Accessories: </label>
       <input id="cost_of_accessories" name="cost_of_accessories" onChange={handleChange} value={formData?.cost_of_accessories} type="text" autoComplete="name" required />
     </p>
-      <button type="submit" class="btn btn-warning">Update</button>
+      <button type="submit" className="btn btn-warning">Update</button>
   </form>
   </div>
   : ''

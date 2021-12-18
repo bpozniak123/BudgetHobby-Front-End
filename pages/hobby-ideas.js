@@ -25,7 +25,7 @@ export default function HobbyIdeas() {
         </h1>
 
       	<Link href="/">
-    			<button type="button" class="btn btn-info">Back to Home</button>
+    			<button type="button" className="btn btn-info">Back to Home</button>
   			</Link>
 
         <div className={styles.grid}>
