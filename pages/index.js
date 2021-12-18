@@ -70,17 +70,17 @@ export default function Home() {
         
 
         <div className={styles.grid}>
-          <a href="http://localhost:3000/read-hobby" className={styles.card}>
+          <a href="https://budget-hobby-front-end.vercel.app/read-hobby" className={styles.card}>
             <h2>Click Here to View Hobbies &rarr;</h2>
             <p>You can also update or delete hobbies too.</p>
           </a>
 
-          <a href="http://localhost:3000/read-budget" className={styles.card}>
+          <a href="https://budget-hobby-front-end.vercel.app/read-budget" className={styles.card}>
             <h2>Click Here to View Budgets&rarr;</h2>
             <p>You can also update or delete budgets too.</p>
           </a>
 
-          <a href="http://localhost:3000/hobby-ideas" className={styles.card}>
+          <a href="https://budget-hobby-front-end.vercel.app/hobby-ideas" className={styles.card}>
             <h2>Hobby Ideas &rarr;</h2>
             <p>Here are a few pictures to spark your interests.</p>
           </a>
